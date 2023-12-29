@@ -4,7 +4,6 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-/* Add this CSS rule to create the rotation animation */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -14,22 +13,21 @@
   }
 }
 
-/* Apply the animation to the rotating-logo class */
 .hero .rotating-logo {
-  animation: rotate 5s linear infinite; /* Adjust the duration and timing function as needed */
+  animation: rotate 5s linear infinite; 
 }
 
 .hero {
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
-.hero h1.stroke-text {
+h1.stroke-text {
   color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white; 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  font-size: 100px;
+  font-size: 100px !important;
 }
 
 .hero hr {
@@ -47,19 +45,22 @@
   max-width: 338px;
   text-align: left;
 }
-.hero .hero-scroll-down, .hero .hero-arrow-down  {
-    position: absolute;
 
+.hero .hero-arrow-down{
+
+    transition: all 0.5s;
 }
 
-.hero .hero-scroll-down{
-    bottom: 10%;
-    right: 5%;
+.hero .hero-arrow-down:hover {
+  transform: scale(1.1);
 }
 
+.about h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
 
-.hero .hero-arrow-down {
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+.about p {
+  font-size: 32px;
+  font-weight: 400;
 }
