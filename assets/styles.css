@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-* {
-  font-family: "IBM Plex Sans", sans-serif;
-}
 
 @keyframes rotate {
   from {
@@ -13,24 +10,45 @@
   }
 }
 
-nav{
-    border-radius: 20px;
-border:5px solid rgba(18, 20, 20, 0.60);
-background: #fff;
-width: max-content;
-position: fixed;
-bottom: 2%;
-left: 50%;
-z-index: 1000;
 
-transform: translateX(-50%);
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #1e1e1e;
 }
 
-nav a{
-    text-decoration: none;
-    color: #000;
-    border-left: 1px solid rgba(206, 214, 214, 0.60) ;
-    /* border-right: 1px solid rgba(206, 214, 214, 0.60) ; */
+body {
+  cursor: url(../assets/img/cursor.png), auto;
+}
+
+header{
+  background: #fff;
+}
+
+nav {
+  border-radius: 20px;
+  border: 5px solid rgba(18, 20, 20, 0.6);
+  background: #fff;
+  width: max-content;
+  position: sticky;
+  bottom: 10px;
+  left: 50%;
+  z-index: 1000;
+
+  transform: translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+  cursor: url(../assets/img/pointer.png), auto !important;
+}
+
+nav p {
+  border-left: 1px solid rgba(206, 214, 214, 0.6);
+}
+
+nav a:first-child {
+  border: none;
 }
 
 .hero .rotating-logo {
@@ -99,8 +117,101 @@ h1.stroke-text {
   font-size: 48px;
 }
 
-.work-experience h2 {
+.work-experience h2,
+.projects h2 {
   color: #1e1e1e;
   font-size: 80px;
   font-weight: 600;
+}
+
+.project-info {
+  position: relative;
+  cursor: url(../assets/img/pointer.png), auto;
+}
+
+.project-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease, transform 0.7s ease; /* Add transition for smooth effect */
+}
+.project-info:hover h1,
+.project-info:hover h4,
+.project-info:hover h3 {
+  opacity: 0.3; /* Adjust the opacity as needed for text on hover */
+}
+.project-info:hover::before {
+  opacity: 1; /* Adjust the opacity as needed */
+  transform: translate(0, 20%) scale(1.2);
+}
+.project-strava::before {
+  background-image: url(../assets/img/projects/strava.png);
+}
+
+.project-cabbage-apps::before {
+  background-image: url(../assets/img/projects/cabbage-apps.png);
+}
+
+.project-buslo::before {
+  background-image: url(../assets/img/projects/buslo.png);
+}
+
+.project-combank::before {
+  background-image: url(../assets/img/projects/combank.png);
+}
+
+.projects .project-info h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.projects .project-info h1:nth-child(2) {
+  font-weight: 300;
+}
+
+.projects .project-info h3 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.projects .project-info h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.projects .project-info hr {
+  border: 1px solid #000;
+}
+
+.connect h2 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 20px;
+  background: #1e1e1e;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4b4b4b;
+}
+
+footer p {
+  font-size: 24px;
+}
+
+footer p.connect {
+  font-weight: 700;
 }
