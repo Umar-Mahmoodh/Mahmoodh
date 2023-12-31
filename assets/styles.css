@@ -31,8 +31,7 @@ nav {
   bottom: 50px;
   left: 50%;
   z-index: 1000;
-
-  transform: translateX(-50%);
+  transform: translateX(-30%);
 }
 a,
 button {
@@ -64,9 +63,9 @@ nav a:first-child {
 h1.stroke-text {
   color: black;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  font-size: 100px !important;
+  font-size: 60px !important;
 }
 
 .hero hr {
@@ -75,12 +74,12 @@ h1.stroke-text {
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 12px;
   max-width: 338px;
   text-align: left;
 }
@@ -94,12 +93,12 @@ h1.stroke-text {
 }
 
 .about h2 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
 }
 
 .about p {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -111,17 +110,17 @@ h1.stroke-text {
 }
 
 .card.text-box h1 {
-  font-size: 128px;
+  font-size: 60px;
 }
 
 .card.text-box h5 {
-  font-size: 48px;
+  font-size: 16px;
 }
 
 .work-experience h2,
 .projects h2 {
   color: #1e1e1e;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -170,7 +169,7 @@ h1.stroke-text {
 }
 
 .projects .project-info h1 {
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -183,7 +182,7 @@ h1.stroke-text {
   font-weight: 400;
 }
 .projects .project-info h4 {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -192,13 +191,13 @@ h1.stroke-text {
 }
 
 .connect h2 {
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
 }
 
 .btn-primary {
   color: #fff;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 20px;
   background: #1e1e1e;
@@ -210,9 +209,64 @@ h1.stroke-text {
 }
 
 footer p {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 footer p.connect {
   font-weight: 700;
+}
+
+@media screen and (min-width: 576px) {
+  .about h2 {
+    font-size: 48px;
+  }
+  .about p {
+    font-size: 32px;
+  }
+  .projects .project-info h4 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    transform: translateX(-50%);
+  }
+  h1.stroke-text {
+    font-size: 100px !important;
+    -webkit-text-stroke-width: 2px;
+  }
+  .hero h1 {
+    font-size: 64px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+  .work-experience h2,
+  .projects h2 {
+    font-size: 80px;
+  }
+  .card.text-box h1 {
+    font-size: 128px;
+  }
+
+  .card.text-box h5 {
+    font-size: 48px;
+  }
+  .projects .project-info h3 {
+    font-size: 48px;
+  }
+  .connect h2 {
+    font-size: 80px;
+  }
+  footer p {
+    font-size: 24px;
+  }
+  .btn-primary {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
