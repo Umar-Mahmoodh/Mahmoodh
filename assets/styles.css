@@ -216,6 +216,10 @@ footer p.connect {
   font-weight: 700;
 }
 
+.w-lg-75 {
+  width: 100%;
+}
+
 @media screen and (min-width: 576px) {
   .about h2 {
     font-size: 48px;
@@ -264,6 +268,9 @@ footer p.connect {
   }
   .btn-primary {
     font-size: 36px;
+  }
+  .w-lg-75 {
+    width: 75%;
   }
 }
 
