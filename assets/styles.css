@@ -39,8 +39,8 @@ button {
 }
 
 a {
-  text-decoration: none;
-  color: #1e1e1e;
+  text-decoration: none !important;
+  color: #1e1e1e !important;
 }
 
 nav p {
@@ -196,12 +196,12 @@ h1.stroke-text {
 }
 
 .btn-primary {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  border-radius: 20px;
-  background: #1e1e1e;
-  border: none;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  border-radius: 20px !important;
+  background: #1e1e1e !important;
+  border: none !important;
 }
 
 .btn-primary:hover {
@@ -216,8 +216,13 @@ footer p.connect {
   font-weight: 700;
 }
 
-.w-lg-75 {
+.w-lg-75,
+.w-lg-50 {
   width: 100%;
+}
+
+header h2 {
+  font-size: 20px !important;
 }
 
 @media screen and (min-width: 576px) {
@@ -267,10 +272,16 @@ footer p.connect {
     font-size: 24px;
   }
   .btn-primary {
-    font-size: 36px;
+    font-size: 36px !important;
   }
   .w-lg-75 {
     width: 75%;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+  header h2 {
+    font-size: 32px !important;
   }
 }
 
